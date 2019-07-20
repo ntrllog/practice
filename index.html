@@ -409,6 +409,21 @@ String choice <span style="color: #333333">=</span> <span style="background-colo
       <p class="tab">D) 50</p>
       <p class="tab">E) 10</p>
       <input></input>
+      <p><strong>26) (FR) What are the different ways to change the code so that it results in an infinite loop?</strong></p>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333399; font-weight: bold">int</span> index <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">while</span> <span style="color: #333333">(</span>index <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">10</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+    System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Boo&quot;</span><span style="color: #333333">);</span>
+    index<span style="color: #333333">++;</span>
+<span style="color: #333333">}</span>
+</pre></div>
+      <div class="collapse" id="q26">
+        <p>remove the <code>index++</code> line</p>
+        <p>change the <code>while</code> condition to <code>while (index >= 0)</code> (or &ge; than some negative number)</p>
+        <p>add <code>index--</code> (or decrease <code>index</code> by some amount)</p>
+        <p>add <code>index = 0</code> (or set <code>index</code> equal to some amount &lt; 10)</p>
+        <p>and other possibilities</p>
+      </div>
+      <a class="btn" data-toggle="collapse" href="#q26">Answer</a>
       <br>
       <button onclick="checkAnswers()">Submit</button>
     </div>
