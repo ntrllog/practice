@@ -424,6 +424,52 @@ String choice <span style="color: #333333">=</span> <span style="background-colo
         <p>and other possibilities</p>
       </div>
       <a class="btn" data-toggle="collapse" href="#q26">Answer</a>
+      <p><strong>27) (FR) Write a program that prints out all even numbers from 1 to 25 using a <code>for</code> loop and then prints out all odd numbers from 25 to 1 using a <code>while</code> loop. The even numbers should be space separated and all on one line. The odd numbers should be on a different line from the even numbers, but also space separated and all on one line. For example, the output should look like:<br>2 4 6 8 10 12 14 16 18 20 22 24<br>25 23 21 19 17 15 13 11 9 7 5 3 1</strong></p>
+      <div class="collapse" id="q27">
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">for</span> <span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">;</span> i <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">25</span><span style="color: #333333">;</span> i<span style="color: #333333">++)</span> <span style="color: #333333">{</span>
+    <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>i <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">print</span><span style="color: #333333">(</span>i <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span><span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+<span style="color: #333333">}</span>
+System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">();</span>
+<span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">25</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">while</span> <span style="color: #333333">(</span>i <span style="color: #333333">&gt;</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+    <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>i <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">2</span> <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">print</span><span style="color: #333333">(</span>i <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; &quot;</span><span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+    i<span style="color: #333333">--;</span>
+<span style="color: #333333">}</span>
+</pre></div>
+      </div>
+      <a class="btn" data-toggle="collapse" href="#q27">Answer</a>
+      <p><strong>28) (FR) Is there anything wrong with this code?</strong></p>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Scanner s <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Scanner<span style="color: #333333">(</span>System<span style="color: #333333">.</span><span style="color: #0000CC">in</span><span style="color: #333333">);</span>
+String text <span style="color: #333333">=</span> s<span style="color: #333333">.</span><span style="color: #0000CC">next</span><span style="color: #333333">();</span>
+<span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>text <span style="color: #333333">==</span> <span style="background-color: #fff0f0">&quot;yes&quot;</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+    System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;yes&quot;</span><span style="color: #333333">);</span>
+<span style="color: #333333">}</span>
+<span style="color: #008800; font-weight: bold">else</span> <span style="color: #333333">{</span>
+    System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;no&quot;</span><span style="color: #333333">);</span>
+<span style="color: #333333">}</span>
+</pre></div>
+      <div class="collapse" id="q28">
+        <p>should not be using <code>==</code> to check for equality of <code>String</code>s</p>
+      </div>
+      <a class="btn" data-toggle="collapse" href="#q28">Answer</a>
+      <p><strong>29) (FR) Is there anything wrong with this code?</strong></p>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Scanner s <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Scanner<span style="color: #333333">(</span>System<span style="color: #333333">.</span><span style="color: #0000CC">in</span><span style="color: #333333">);</span>
+<span style="color: #333399; font-weight: bold">int</span> input <span style="color: #333333">=</span> s<span style="color: #333333">.</span><span style="color: #0000CC">nextInt</span><span style="color: #333333">();</span>
+<span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>input <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">5</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+    System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;you entered 5&quot;</span><span style="color: #333333">);</span>
+<span style="color: #333333">}</span>
+<span style="color: #008800; font-weight: bold">else</span> <span style="color: #333333">{</span>
+    System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;you did not enter 5&quot;</span><span style="color: #333333">);</span>
+<span style="color: #333333">}</span>
+</pre></div>
+      <div class="collapse" id="q29">
+        <p>should not be using <code>=</code> to check for equality</p>
+      </div>
+      <a class="btn" data-toggle="collapse" href="#q29">Answer</a>
       <br>
       <button onclick="checkAnswers()">Submit</button>
     </div>
