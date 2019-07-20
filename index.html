@@ -286,7 +286,7 @@ System<span style="color: #333333">.</span><span style="color: #0000CC">out</spa
         <p>the third line should be: <code>a = b + a;</code></p>
       </div>
       <a class="btn" data-toggle="collapse" href="#q19">Answer</a>
-      <p><strong>20) What will be printed out?</strong></p>
+      <p><strong>20) (MC) What will be printed out?</strong></p>
       <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">String a <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;HEY THERE&quot;</span><span style="color: #333333">;</span>
 <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>a<span style="color: #333333">.</span><span style="color: #0000CC">equalsIgnoreCase</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;heythere&quot;</span><span style="color: #333333">))</span> <span style="color: #333333">{</span>
     System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Success!&quot;</span><span style="color: #333333">);</span>
@@ -379,6 +379,36 @@ String choice <span style="color: #333333">=</span> <span style="background-colo
         <p>notice the position of the <code>if</code> statements</p>
       </div>
       <a class="btn" data-toggle="collapse" href="#q23">Answer</a>
+      <p><strong>24) (MC) How many lines will be printed out?</strong></p>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">for</span> <span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span> i <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">6</span><span style="color: #333333">;</span> i<span style="color: #333333">++)</span> <span style="color: #333333">{</span>
+    <span style="color: #008800; font-weight: bold">for</span> <span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span> j <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">4</span><span style="color: #333333">;</span> j<span style="color: #333333">++)</span> <span style="color: #333333">{</span>
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Hi&quot;</span><span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+<span style="color: #333333">}</span>
+</pre></div>
+      <p class="tab">A) There's an error!</p>
+      <!-- ANSWER -->
+      <p class="tab">B) 24</p>
+      <p class="tab">C) 10</p>
+      <p class="tab">D) 12</p>
+      <p class="tab">E) 35</p>
+      <input></input>
+      <p><strong>25) (MC) What will be the last number printed out?</strong></p>
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333399; font-weight: bold">int</span> k <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">for</span> <span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span> i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span> i <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">10</span><span style="color: #333333">;</span> i<span style="color: #333333">+=</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+    <span style="color: #008800; font-weight: bold">for</span> <span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span> j <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span> j <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">5</span><span style="color: #333333">;</span> j<span style="color: #333333">++)</span> <span style="color: #333333">{</span>
+        k <span style="color: #333333">=</span> k <span style="color: #333333">+</span> <span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">;</span>
+        System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span>k<span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+<span style="color: #333333">}</span>
+</pre></div>
+      <p class="tab">A) 15</p>
+      <!-- ANSWER -->
+      <p class="tab">B) 25</p>
+      <p class="tab">C) There's an error!</p>
+      <p class="tab">D) 50</p>
+      <p class="tab">E) 10</p>
+      <input></input>
       <br>
       <button onclick="checkAnswers()">Submit</button>
     </div>
@@ -393,7 +423,7 @@ String choice <span style="color: #333333">=</span> <span style="background-colo
       }
     });
   }
-  var answers = ["C", "C", "A", "C", "D", "D", "C", "D", "B", "E", "D", "E", "C", "C", "E", "A"];
+  var answers = ["C", "C", "A", "C", "D", "D", "C", "D", "B", "E", "D", "E", "C", "C", "E", "A", "B", "B"];
   var correct = 0;
   function checkAnswers() {
     correct = 0;
