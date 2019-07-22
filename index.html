@@ -17,6 +17,9 @@
   input, .btn {
     margin-bottom: 50px;
   }
+  .hidden {
+    display: none;
+  }
 </style>
 
 <div class="container">
@@ -471,6 +474,7 @@ String text <span style="color: #333333">=</span> s<span style="color: #333333">
       </div>
       <a class="btn" data-toggle="collapse" href="#q29">Answer</a>
       <p><strong>30) Yay!</strong></p>
+      <a id="answer_link" class="hidden" href="answers.html" target="_blank">See MC Answers</a>
       <br>
       <button onclick="checkAnswers()">Submit</button>
     </div>
@@ -495,7 +499,10 @@ String text <span style="color: #333333">=</span> s<span style="color: #333333">
         correct = correct + 1;
       }
     }
-    alert(`You got ${correct} answers right out of ${inputs.length}!`);
+    document.getElementById('answer_link').style.display = "block";
+    if (window.confirm(`You got ${correct} answers right out of ${inputs.length}!\nPress OK or go to Q30 to see MC answers.`)) {
+      window.open("answers.html", '_blank');
+    };
   }
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
